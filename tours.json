@@ -1,0 +1,145 @@
+[
+  {
+    "id": "1",
+    "name": "Đà Lạt mộng mơ cùng Nguyễn Trọng Tiến",
+    "city": "Đà Lạt",
+    "days": 3,
+    "price": 3590000,
+    "seats": 12,
+    "departure": "2026-11-05",
+    "image": "https://picsum.photos/seed/tourviet1/400/300",
+    "isFavorite": true
+  },
+  {
+    "id": "2",
+    "name": "Đà Lạt săn mây Cầu Đất",
+    "city": "Đà Lạt",
+    "days": 2,
+    "price": 2490000,
+    "seats": 0,
+    "departure": "2026-11-20",
+    "image": "https://picsum.photos/seed/tourviet2/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "3",
+    "name": "Đà Lạt mùa hoa dã quỳ",
+    "city": "Đà Lạt",
+    "days": 4,
+    "price": 4290000,
+    "seats": 2,
+    "departure": "2026-11-12",
+    "image": "https://picsum.photos/seed/tourviet3/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "4",
+    "name": "Hà Nội 36 phố phường",
+    "city": "Hà Nội",
+    "days": 2,
+    "price": 2190000,
+    "seats": 15,
+    "departure": "2026-12-01",
+    "image": "https://picsum.photos/seed/tourviet4/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "5",
+    "name": "Hà Nội – Ninh Bình – Tràng An",
+    "city": "Hà Nội",
+    "days": 3,
+    "price": 3890000,
+    "seats": 3,
+    "departure": "2026-11-18",
+    "image": "https://picsum.photos/seed/tourviet5/400/300",
+    "isFavorite": true
+  },
+  {
+    "id": "6",
+    "name": "Hà Nội – Hạ Long du thuyền",
+    "city": "Hà Nội",
+    "days": 3,
+    "price": 5490000,
+    "seats": 0,
+    "departure": "2026-12-10",
+    "image": "https://picsum.photos/seed/tourviet6/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "7",
+    "name": "Đà Nẵng – Bà Nà Hills",
+    "city": "Đà Nẵng",
+    "days": 3,
+    "price": 4590000,
+    "seats": 8,
+    "departure": "2026-11-25",
+    "image": "https://picsum.photos/seed/tourviet7/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "8",
+    "name": "Đà Nẵng – Hội An phố cổ",
+    "city": "Đà Nẵng",
+    "days": 4,
+    "price": 5290000,
+    "seats": 1,
+    "departure": "2026-11-08",
+    "image": "https://picsum.photos/seed/tourviet8/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "9",
+    "name": "Đà Nẵng biển Mỹ Khê",
+    "city": "Đà Nẵng",
+    "days": 2,
+    "price": 2790000,
+    "seats": 20,
+    "departure": "2026-12-15",
+    "image": "https://picsum.photos/seed/tourviet9/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "10",
+    "name": "Phú Quốc đảo ngọc",
+    "city": "Phú Quốc",
+    "days": 4,
+    "price": 6990000,
+    "seats": 6,
+    "departure": "2026-12-05",
+    "image": "https://picsum.photos/seed/tourviet10/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "11",
+    "name": "Phú Quốc lặn ngắm san hô",
+    "city": "Phú Quốc",
+    "days": 3,
+    "price": 5590000,
+    "seats": 10,
+    "departure": "2026-11-15",
+    "image": "https://picsum.photos/seed/tourviet11/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "12",
+    "name": "Huế cố đô mộng mơ",
+    "city": "Huế",
+    "days": 2,
+    "price": 2390000,
+    "seats": 9,
+    "departure": "2026-11-28",
+    "image": "https://picsum.photos/seed/tourviet12/400/300",
+    "isFavorite": false
+  },
+  {
+    "id": "13",
+    "name": "Huế – Động Phong Nha",
+    "city": "Huế",
+    "days": 3,
+    "price": 3990000,
+    "seats": 4,
+    "departure": "2026-12-20",
+    "image": "https://picsum.photos/seed/tourviet13/400/300",
+    "isFavorite": false
+  }
+]

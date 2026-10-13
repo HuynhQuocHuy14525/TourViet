@@ -1,56 +1,35 @@
-# Welcome to your Expo app 👋
+# Tour Việt – Bài giữa kỳ Lập trình thiết bị di động
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## Cấu trúc
+```
+App.tsx                      Câu 1, 2, 4c, 5, 6 (màn hình chính)
+components/TourItem.tsx      Câu 3, 4a, 4b (kiểu Tour, TourItemProps, React.memo)
+utils/tour.ts                groupByCity, formatDate, getSeatLabel, formatPrice
+__tests__/tour.test.ts       Câu 7a, 7b
+__tests__/TourItem.test.tsx  Câu 7c, 7d
+tours.json                   13 bản ghi mẫu để dán vào mockapi.io
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Bước 1 – Tạo API trên mockapi.io
+1. Đăng nhập https://mockapi.io → New Project.
+2. New resource tên `tours`, schema:
+   name (String), city (String), days (Number), price (Number), seats (Number),
+   departure (String), image (String), isFavorite (Boolean).
+3. Mở tab **Data** của resource, dán toàn bộ nội dung `tours.json` → Update.
+   (Bản ghi 1 đã có tên SV; sửa lại nếu cần.)
+4. Copy endpoint, ví dụ `https://6712abcd.mockapi.io/tours`.
 
-### Other setup steps
+Dữ liệu mẫu thoả đề: 13 bản ghi, 5 thành phố; seats = 0: id 2, 6;
+seats 1–3: id 3, 5, 8; isFavorite = true: id 1, 5.
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## Bước 2 – Sửa 2 hằng số trong App.tsx
+```ts
+const API_URL = 'https://<your-project-id>.mockapi.io/tours';
+const STUDENT = '21xxxxxx – Nguyễn Trọng Tiến';
+```
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Bước 3 – Chạy
+- **Snack**: tạo đúng các file/thư mục như trên (App.tsx, components/TourItem.tsx,
+  utils/tour.ts, __tests__/...), thêm dependency `react-native-safe-area-context`.
+- **VSCode**: `npm install` → `npx expo start`.
+- Test: `npm test` (11 test, đều pass).
